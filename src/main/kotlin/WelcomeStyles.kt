@@ -2,6 +2,9 @@ import kotlinx.css.*
 import styled.StyleSheet
 
 object WelcomeStyles : StyleSheet("WelcomeStyles", isStatic = true) {
+    val titleContainer by css {
+        fontFamily = "sans-serif"
+    }
     val textContainer by css {
         padding(5.px)
 

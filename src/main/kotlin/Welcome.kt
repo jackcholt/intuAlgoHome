@@ -8,6 +8,7 @@ import react.State
 import react.dom.attrs
 import styled.css
 import styled.styledDiv
+import styled.styledH1
 import styled.styledInput
 
 external interface WelcomeProps : Props {
@@ -23,6 +24,12 @@ class Welcome(props: WelcomeProps) : RComponent<WelcomeProps, WelcomeState>(prop
     }
 
     override fun RBuilder.render() {
+        styledH1 {
+            css {
+                +WelcomeStyles.titleContainer
+            }
+            +"IntuAlgo"
+        }
         styledDiv {
             css {
                 +WelcomeStyles.textContainer
