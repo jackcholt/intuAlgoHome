@@ -1,7 +1,6 @@
 package component
 
 import kotlinx.css.*
-import kotlinx.css.Float
 import react.Props
 import react.fc
 import styled.css
@@ -17,21 +16,25 @@ val Menu = fc<Props> {
         child(MenuItem) {
             attrs {
                 text = "Products"
+                url = "/products"
             }
         }
         child(MenuItem) {
             attrs {
                 text = "Leadership Team"
+                url = "/leadership"
             }
         }
         child(MenuItem) {
             attrs {
                 text = "Contact"
+                url = "/contact"
             }
         }
         child(MenuItem) {
             attrs {
                 text = "Blog"
+                url = "/blog"
             }
         }
     }

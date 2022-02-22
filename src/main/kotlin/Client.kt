@@ -8,11 +8,6 @@ fun main() {
         render(document.getElementById("root")) {
             document.bgColor = "#f8f8f8"
             child(Header)
-            child(Welcome::class) {
-                attrs {
-                    name = "Kotlin/JS"
-                }
-            }
         }
     }
 }

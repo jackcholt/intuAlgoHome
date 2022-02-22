@@ -4,7 +4,6 @@ import react.Props
 import react.fc
 
 val Header = fc<Props> {
-    HeaderRow {
-        child(Menu)
-    }
+    console.log("Starting Header")
+    HeaderRow
 }
